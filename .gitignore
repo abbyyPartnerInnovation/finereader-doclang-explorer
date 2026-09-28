@@ -1,0 +1,53 @@
+# Build, test, and publish outputs
+**/bin/
+**/obj/
+**/artifacts/
+artifacts/
+**/TestResults/
+**/test-results/
+**/playwright-report/
+*.trx
+*.coverage
+*.coveragexml
+
+# Local configuration and credentials
+**/appsettings.Local.json
+**/appsettings.*.local.json
+**/.env
+**/.env.*
+!**/.env.example
+**/secrets.json
+**/*secrets*.json
+*.pem
+*.key
+*.pfx
+*.p12
+*.jks
+*.keystore
+*.lic
+*.license
+
+# Proprietary FineReader binaries are installed locally
+vendor/*
+!vendor/README.md
+
+# IDE, user, and operating-system files
+.vs/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Logs, caches, and local audit snapshots
+*.log
+.dotnet/
+.nuget/
+old-application-*.json
+*-baseline.json
+*-source-hashes.json
+*-before.json
